@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(85, 85, 85);
+}
+
+#background {
+    /* set backround as 2 radial gradients, one yellow one blue */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    background: 
+        /*radial-gradient(ellipse at 35% -5%, hsl(271, 20%, 21%), transparent),
+        radial-gradient(ellipse at 0% 100%, hsl(203, 48%, 24%), transparent),
+        radial-gradient(ellipse at 100% 100%, hsl(203, 94%, 20%), transparent);*/
+        radial-gradient(ellipse at 35% -5%, hsl(43, 33%, 32%), transparent),
+        radial-gradient(ellipse at 0% 100%, hsl(40, 74%, 17%), transparent),
+        radial-gradient(ellipse at 100% 100%, hsl(0, 14%, 16%), transparent);
+}
+
+
+
+#sketchfab-embed-wrapper{
+    left: 1vmin;
+    top: 1vmin;
+    bottom: 1vmin;
+    right: 1vmin;
+    width:auto;
+    height:auto;
+}
+
+#model {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 1;
+}

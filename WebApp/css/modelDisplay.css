@@ -1,0 +1,114 @@
+#displayWindow {
+    position: absolute;
+    width: auto;
+    bottom: 10vmin;
+    left: 10vmin;
+    right: 10vmin;
+    top: 10vmin;
+    border-radius: 1vmin;
+    box-shadow: 0vmin 1vmin 3vmin .5vmin hsl(210, 20%, 10%);
+    border: .1vmin solid hsla(0, 0%, 38%, 0.8);
+    overflow: hidden;
+    backdrop-filter: blur(1vmin);
+    background-color: rgba(7, 12, 33, 0.356);
+    /*background:
+        radial-gradient(ellipse at 50% 100%, hsl(0, 0%, 100%), transparent),
+        radial-gradient(ellipse at 100% 0%, hsl(0, 100%, 50%), transparent),
+        radial-gradient(ellipse at 0% 100%, hsl(125, 100%, 50%), transparent),
+        radial-gradient(ellipse at 100% 100%, hsl(223, 100%, 50%), transparent)
+        radial-gradient(ellipse at 10% 105%, hsl(203, 53%, 7%), transparent),
+        radial-gradient(ellipse at 100% 105%, hsl(203, 53%, 7%), transparent),
+        radial-gradient(ellipse at 50% 10%, hsl(181, 70%, 27%), transparent),
+        radial-gradient(ellipse at 0% 30%, hsl(157, 72%, 36%), transparent),
+        radial-gradient(ellipse at 100% 30%, hsl(157, 72%, 36%), transparent);*/
+}
+
+/* Controls */
+
+#displayControls {
+    position: absolute;
+    width: 50vmin;
+    height: 5vmin;
+    background-color: hsla(0, 0%, 100%, 0.388);
+    bottom: 1vmin;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 1vmin;
+    box-shadow: 0vmin .2vmin .5vmin .05vmin hsl(210, 20%, 10%);
+}
+
+.modelButton {
+    position: absolute;
+    width: 5vmin;
+    height: 5vmin;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vmin;
+    flex:content;
+}
+
+.modelButton img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(.5) brightness(1.5);
+}
+
+.modelButton:hover img{
+    filter: invert(.5) brightness(2);
+}
+
+#nextModel {
+    right: 0%;
+    top: 0%;
+}
+
+#prevModel {
+    left: 0%;
+    top: 0%;
+}
+
+#wikiInfo {
+    left: calc(50% + 4vmin);
+    top: 0%;
+    transform: translate(-50%, 0%);
+}
+
+#publicationPDF {
+    left: calc(50% - 4vmin);
+    top: 0%;
+    transform: translate(-50%, 0%);
+}
+
+/* 3D Viewer */
+
+#displayViewer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 6vmin;
+}
+
+#sketchfab-embed-wrapper{
+    left: 1vmin;
+    top: 1vmin;
+    bottom: 5vmin;
+    right: 1vmin;
+    width:auto;
+    height:auto;
+}
+
+#model {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    z-index: 1;
+}

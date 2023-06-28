@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OZAR</title>
+    <link rel="stylesheet" href="css/styleGeneral.css" />
+    <link rel="stylesheet" href="css/modelDisplay.css" />
+  </head>
+  <body>
+    <div id="background"></div>
+    <!-- Where to display all 3D models -->
+    <div id="displayWindow">
+      <div id="displayViewer"><div id="sketchfab-embed-wrapper"></div></div>
+      <div id="displayControls">
+        <button id="prevModel" title="Previous Model" class="modelButton">
+          <img src="svg/arrowLeft.svg" alt="Wiki Icon" />
+        </button>
+        <button id="nextModel" title="Next Model" class="modelButton">
+          <img src="svg/arrowRight.svg" alt="Wiki Icon" />
+        </button>
+        <button id="wikiInfo" title="Relevant Wiki" class="modelButton">
+          <img src="svg/wiki.svg" alt="Wiki Icon" />
+        </button>
+        <button id="publicationPDF" title="Publication" class="modelButton">
+          <img src="svg/filePDF.svg" alt="Wiki Icon" />
+        </button>
+      </div>
+    </div>
+    <!--External Packages and Libraries-->
+    <script type="text/javascript" src="lib/papaparse.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.6.1.js"></script>
+    <!--Scripts-->
+    <script type="text/javascript" src="js/modelLibrary.js"></script>
+  </body>
+</html>
