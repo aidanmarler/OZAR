@@ -1,9 +1,9 @@
 #displayWindow {
     position: absolute;
     width: auto;
-    bottom: 10vmin;
-    left: 10vmin;
-    right: 10vmin;
+    bottom: 7vmin;
+    left: 40%;
+    right: 7vmin;
     top: 10vmin;
     border-radius: 1vmin;
     box-shadow: 0vmin 1vmin 3vmin .5vmin hsl(210, 20%, 10%);
@@ -29,7 +29,7 @@
     position: absolute;
     width: 50vmin;
     height: 5vmin;
-    background-color: hsla(0, 0%, 100%, 0.388);
+    background-color: hsla(0, 0%, 100%, 0.1);
     bottom: 1vmin;
     left: 50%;
     transform: translate(-50%, 0%);
